@@ -1,0 +1,43 @@
+.library-container {
+    // background: lightblue;
+    box-shadow: 2px 2px 5px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    // overflow: scroll;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition:all 0.5s ease;
+    user-select: none;
+    h1 {
+        padding: 3rem;
+        cursor: pointer;
+    }
+}
+
+.library-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    img{
+        width: 30%;
+    }
+
+    &:hover{
+        background: rgb(201, 222, 229);
+    }
+}
+
+.selected {
+    background: rgb(177, 177, 248);
+}
+
+.active-library {
+    transform: translateX(0%);
+    opacity: 1;
+}
